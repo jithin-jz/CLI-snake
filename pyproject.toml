@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jsnake"
+version = "0.1.5"
+description = "🐍 JSNAKE: The ultimate neon-powered terminal arcade snake with addictive leveling and perfectly balanced movement!"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Jithi", email = "jithi@example.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: Games/Entertainment",
+    "Intended Audience :: End Users/Desktop",
+]
+dependencies = [
+    "textual>=0.50.0",
+    "rich>=13.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.4.0",
+    "mypy>=1.9.0",
+    "pytest>=8.0.0",
+    "build>=1.0.0",
+    "twine>=5.0.0",
+]
+
+[project.scripts]
+jsnake = "jsnake.main:main"
+
+[project.urls]
+Homepage = "https://github.com/Jithi/jsnake"
+Repository = "https://github.com/Jithi/jsnake"
+Issues = "https://github.com/Jithi/jsnake/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I", "U", "N", "S", "T", "RUF"]
+ignore = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+asyncio_mode = "strict"
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+ignore_missing_imports = true
