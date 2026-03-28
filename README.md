@@ -4,20 +4,42 @@ A clean, arcade-style Snake game for the terminal. Built with Python and the Tex
 
 ## Installation
 
+### PowerShell / Windows
+```bash
+py -m pip install --upgrade pip
+py -m pip install jsnake
+jsnake
+```
+
+If PowerShell says `jsnake` is not recognized, close and reopen the terminal once.
+You can also launch the game directly with:
+
+```bash
+py -m jsnake
+```
+
 ### Standard Installation
 ```bash
 pip install jsnake
+jsnake
 ```
 
-### Pro Installation (Gamified Experience)
-For a more engaging setup experience, run our custom installer:
+### Optional Cinematic Installer
+If you want the animated installer experience, use the command that matches your shell.
+
+PowerShell:
+```powershell
+irm https://raw.githubusercontent.com/Jithi/jsnake/main/setup_jsnake.py | py -
+```
+
+Bash:
 ```bash
 curl -sSL https://raw.githubusercontent.com/Jithi/jsnake/main/setup_jsnake.py | python
 ```
 
 ## How to Play
 
-Run the game from your terminal:
+Run the game from your terminal after installation:
 
 ```bash
 jsnake

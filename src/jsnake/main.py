@@ -13,7 +13,7 @@ def boot_sequence():
     
     console.print(Panel.fit(
         "[bold green]JSNAKE NEURAL ENGINE[/bold green]\n"
-        "[dim]Initializing Core Subsystems v0.1.5[/dim]",
+        "[dim]Initializing Core Subsystems v0.1.6[/dim]",
         border_style="bright_blue"
     ))
 

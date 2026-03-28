@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "jsnake"
-version = "0.1.5"
+version = "0.1.6"
 description = "🐍 JSNAKE: The ultimate neon-powered terminal arcade snake with addictive leveling and perfectly balanced movement!"
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = "MIT"
 authors = [
   { name = "Jithi", email = "jithi@example.com" }
 ]
@@ -17,7 +17,6 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Environment :: Console",
     "Topic :: Games/Entertainment",
