@@ -4,7 +4,7 @@ A clean, arcade-style Snake game for the terminal. Built with Python and the Tex
 
 ## Installation
 
-### PowerShell / Windows
+### PowerShell
 ```bash
 py -m pip install --upgrade pip
 py -m pip install jsnake
